@@ -162,28 +162,189 @@ nav > span{
     cursor: pointer;
 }
 
+.about-section{
+    position: relative;
+    bottom: 20%;
+    background-color: #1A0B2E;
+    border: none;
+    
+    
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    padding-top: 25px;
+    
+}
+.about-h3 > h3{
+    font-size: 2em;
+    font-weight: 700;
+    color: #ffffff;
+
+   margin-bottom: 20px;
+}
+.Techwave-p , .p{
+    font-size: 1em;
+    font-weight: 400;
+    color: #7c7c7c;
+}
+.thousands{
+    margin-top: 30px;
+}
+.about-section > hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 20px;
+   
+}
+
+.rating-bar{
+    width: 60%;
+    height: 20%;
+    padding: 23px;
+    margin-top: 70px ;
+   position: relative;
+   left: 22%;
+   
+}
+
+.rating{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+}
+.rating p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #7c7c7c;
+    margin-top: 8px;
+}
+
+.grid-container{
+    background-color: #230E3D;
+    margin-top: 40px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+
+.bento-container {
+  display: grid;
+  gap: 16px;
+  width: 70%;
+  max-width: 1100px;
+  
+  grid-template-areas: 
+    "premium mobile mobile"
+    "premium global global"
+    "interviews interviews resources";
+}
+
+
+.card {
+  background-color: #301455;
+  border-radius: 24px;
+  padding: 30px;
+  color: #ffffff;
+}
+
+
+.premium { grid-area: premium; }
+.mobile { grid-area: mobile; }
+.global { grid-area: global; }
+.interviews { grid-area: interviews; }
+.resources { grid-area: resources; }
+
+
+.icon{
+    margin-bottom: 23px;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+p {
+  color: #a394b8;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+
+
+
 @media (max-width: 576px) {
+    header{
+        width: 100%;
+    }
+    .inter{
+        width: 100%;
+    }
+    .menu-bar , .btn{
+        display: none;
+    }
+    .nav-bar{
+        width: 100%;
+        height: auto;
+    }
+    .nav-logo{
+        width:  145px;
+        margin-left: -54px;
+        font-size: 14px;
+    }
+    nav > span{
+       
+        display: inline;
+        margin-right: 80px;
+        color: #ffffff;
+    }
+    .container{
+          width: 78vh;
+        min-height: 46vh;
+    }
     .circle-img, .round {
-              width: 256px;
-        height: 256px;
-        top: 126%;
+        width: 215px;
+        height: 193px;
+        top: 136%;
     }
 
     .mic-img, .mic {
-               width: 90px;
-        height: 100px;
+  width: 70px;
+        height: 90px;
         left: 50%;
-        top: 251%;
-
+        top: 246%;
     }
-
+ 
     .tool-bar > span {
-        font-size: 14px;
-        padding: 6px 10px;
-        top: 15%;
-        left: 70%;
+        font-size: 17px;
+        padding: 10px 37px;
+        top: 18%;
+        left: 62%;
+        width: 10px;
+        text-align: center;
     }
 
+    .banner-btn{
+        width: 285px;
+        display: flex;
+    }
     .banner-text {
         top: 75%;
         width: 90%;
@@ -191,11 +352,11 @@ nav > span{
     }
 
     .banner-text > h3 {
-        font-size: 2em;
+     font-size: 30px;
     }
 
     .banner-text > p {
-        font-size: 1.0em;
+     font-size: 21px
     }
 
     .banner-btn > .Spotify-btn {
@@ -207,4 +368,37 @@ nav > span{
         font-size: 14px;
         padding: 6px 12px;
     }
+
+    .about-section{
+     width: 78vh;
+    }
+
+ .rating-bar > .rating{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    width: 50vh;
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+ }
+
+ .grid-container > h2 {
+    width: 150px;
+    height: auto;
+ }
+.bento-container {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  
+  
+  grid-template-areas: 
+    "premium premium premium "
+    "mobile mobile  mobile"
+    " global  global  global"
+    "interviews interviews interviews"
+    "resources  resources  resources";
+}
+
 }
